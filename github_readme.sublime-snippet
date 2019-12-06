@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+README
+====
+
+Overview
+
+## Description
+
+## Requirement
+
+## Usage
+
+## Install
+
+## Licence
+
+[MIT](https://github.com/shka86/foo/blob/master/LICENCE)
+
+## Author
+
+[shka86](https://github.com/shka86)
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>readme</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
