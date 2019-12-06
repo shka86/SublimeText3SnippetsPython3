@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+import re
+
+instr = ${1}
+outstr = re.sub(r'from', r'to', instr)
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>resub</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>

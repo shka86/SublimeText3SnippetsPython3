@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+###
+import os
+import pathlib
+
+# Bool, file or dir exist?
+os.path.exists(tgt)
+pathlib.Path(tgt).exists()
+
+# Bool, dir exist?
+os.path.isdir(tgt)
+pathlib.Path(tgt).is_dir()
+
+#Bool, file exist?
+os.path.isfile(tgt)
+pathlib.Path(tgt).is_file()
+
+#Bool, symbolic link exist?
+os.path.islink(tgt)
+pathlib.Path(tgt).is_symlink()
+
+#Str, get file name
+pathlib.Path(tgt).name # wtih suffix
+pathlib.Path(tgt).stem # without suffix
+
+#Str, get file suffix
+pathlib.Path(tgt).suffix # ex) .tar.gz => '.gz'
+pathlib.Path(tgt).suffixes  # ex) .tar.gz => ['.tar', '.gz']
+
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>existence</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
+

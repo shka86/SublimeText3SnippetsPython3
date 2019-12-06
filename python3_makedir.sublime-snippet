@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+# make a dir
+import pathlib
+pathlib.Path(tgt).mkdir()
+pathlib.Path(tgt).mkdir(parents=True) # same as: mkdir -p
+
+#remove a dir recursively
+import shutil
+shutil.rmtree(tgt)
+
+import pathlib
+pathlib.Path(tgt).rmdir()
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>makedir</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>

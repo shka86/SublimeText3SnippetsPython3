@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+import datetime
+dt = datetime.datetime.now()
+print(dt.strftime('%Y%m%d-%H%M%S'))
+print(dt.strftime('%Y年%m月%d日 %H時%M分%S秒'))
+print(dt.strftime('%A, %B')) # Weekday, Month
+print(dt.strftime('%a, %b')) # Wkdy, Mnth
+
+weeklist = ["月","火","水","木","金","土","日"]
+print(weeklist[dt.weekday()])
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>datetime</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
