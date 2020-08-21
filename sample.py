@@ -6,20 +6,19 @@ import sys
 
 def main(args):
 
-    tgt_file = "testfile.txt"
+    tgt = "testfile.txt"
 
-    with open(tgt_file, 'w') as f:
+    with open(tgt, 'w') as f:
         f.write("test str")
 
-    with open(tgt_file, 'r') as f:
+    with open(tgt, 'r') as f:
         lines = f.readlines()
 
     for line in lines:
         print(line)
 
+    print("## os")
     import os
-
-    tgt = "hoge"
 
     # Bool, file or dir exist?
     print(os.path.exists(tgt))
@@ -33,6 +32,7 @@ def main(args):
     #Bool, symbolic link exist?
     print(os.path.islink(tgt))
 
+    print("## pathlib")
     import pathlib
 
     # Bool, file or dir exist?
@@ -46,6 +46,8 @@ def main(args):
 
     #Bool, symbolic link exist?
     print(pathlib.Path(tgt).is_symlink())
+
+    input("hit a key")
 
 if __name__ == '__main__':
 
